@@ -144,11 +144,23 @@ Outputs per scenario:
 ├── 05_inventory_optimization.ipynb
 │
 ├── data/
-│   ├── segmentation.csv
-│   └── inventory_policy_recommendations.csv
+│   ├── outputs/
+│   │   ├── segmentation.csv
+│   │   └── inventory_policy_recommendations.csv
+│   │
+│   └── inputs/
+│       ├── holidays_events.csv
+│       ├── stores.csv
+│       └── oil.csv
+│
+├── models/
+│   └── xgb_model.pkl
 │
 └── README.md
 ```
+
+> ⚠️ Raw training data (`train.csv`, `test.csv`, `transactions.csv`) are not included due to file size limits.
+> Download them directly from the [Kaggle Store Sales dataset](https://www.kaggle.com/competitions/store-sales-time-series-forecasting/data).
 
 ---
 
